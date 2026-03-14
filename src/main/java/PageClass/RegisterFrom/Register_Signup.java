@@ -1,7 +1,10 @@
 package PageClass.RegisterFrom;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class Register_Signup {
 	WebDriver driver;
@@ -24,42 +27,25 @@ public class Register_Signup {
 	      By EmailId= (By.cssSelector("input[ng-model='EmailAdress']"));
 	    // Gender
 	      By Gender = (By.xpath("//input[@value='Male']"));
-	    // Language  
-	      By Language = (By.xpath("//div[@id='msdd']"));
-	      By Lang = (By.xpath("//a[text()='Arabic']"));
+//	    // Language  
+//	      By Language = (By.xpath("//div[@id='msdd']"));
+//	      By Lang = (By.xpath("//a[text()='Arabic']"));
 	      
 	      
 	 // Methods
-	      public void enterFirstName(String fname){
-	    	  driver.findElement(FirstName).sendKeys(fname);
-	    	 
-	      }
-	      
-	      public void enterLastName(String lname){
-	    	  driver.findElement(LastName).sendKeys(lname);
-	    	 
-	      }
-	      
-	      public void enterAddress(String paddress){
-	    	  driver.findElement(Address).sendKeys(paddress);
-	    	 
-	      }
-	      
-	      public void enterEmail(String emailid){
-	    	  driver.findElement(EmailId).sendKeys(emailid);
-	    	 
-	      }
-	      
-	      public void enterGender(String genders){
+	     
+	      public void enterDeatils(){
+	    	  driver.findElement(FirstName).sendKeys("sai");
+	    	  driver.findElement(LastName).sendKeys("prasad");
+	    	  driver.findElement(Address).sendKeys("Your address text here");
+	    	  driver.findElement(EmailId).sendKeys("saiprasadp555@gmail.com");
 	    	  driver.findElement(Gender).click();
-	    	 
+	    	  WebElement lang = driver.findElement(By.xpath("//a[text()='Arabic']"));
+	    	  ((JavascriptExecutor)driver).executeScript("arguments[0].click();", lang);
+	    	  
 	      }
 	      
-	      public void enterLanguage(String langs){
-	    	  driver.findElement(Language).click();
-	    	  driver.findElement(Lang).click();
-	    	 
-	      }
+	     
 	      
 	      
 	      

@@ -1,7 +1,7 @@
 package Interactions;
 
 import org.openqa.selenium.By;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class Selectable {

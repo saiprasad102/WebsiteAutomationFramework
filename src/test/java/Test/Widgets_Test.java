@@ -7,41 +7,70 @@ import Widgets.Datepicker;
 import Widgets.Slider;
 
 public class Widgets_Test extends Basic_BrowserSetup {
+	
+	public void runAccordion() {
+		Accordion ContainsAccordion = new Accordion(driver);
+		ContainsAccordion.ClickAccordion();
+		ContainsAccordion.VerifyContent1();  // Text is NOT displayed.
+		ContainsAccordion.VerifyContent2();
+	}
+	
+	
+	public void runAutoComplete() {
+		AutoComplete  ContainsAutoComplete = new AutoComplete(driver);
+		 ContainsAutoComplete.CheckAutoComplete();
+	}
+	
+	
+	public void runDatepicker() {
+		Datepicker SelectDatapicker = new Datepicker(driver);
+		SelectDatapicker.SelectDateDisabledAndEnabled();
+	}
+	
+	
+	public void runSlider() {
+		Slider MoveSlider = new Slider(driver);
+		MoveSlider.DragTheSlider();
+	}
+	
+	
+	
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		boolean runAccordion = false;
-        boolean runAutoComplete = false;
-        boolean runDatepicker = false;
-        boolean runSlider = true;
-        
-		Widgets_Test test = new Widgets_Test();
-		test.setup();
+
+//		boolean runAccordion = false;
+//        boolean runAutoComplete = false;
+//        boolean runDatepicker = false;
+//        boolean runSlider = true;
+//        
+//		Widgets_Test test = new Widgets_Test();
+//		test.setup();
+//		
+//		if (runAccordion) {
+//			Accordion ContainsAccordion = new Accordion(test.driver);
+//			ContainsAccordion.ClickAccordion();
+//			ContainsAccordion.VerifyContent1();  // Text is NOT displayed.
+//			ContainsAccordion.VerifyContent2();
+//		}
+//		
+//		if (runAutoComplete) {
+//			 AutoComplete  ContainsAutoComplete = new AutoComplete(test.driver);
+//			 ContainsAutoComplete.CheckAutoComplete();
+//		}
+//		
+//		if (runDatepicker) {
+//			Datepicker SelectDatapicker = new Datepicker(test.driver);
+//			SelectDatapicker.SelectDateDisabledAndEnabled();
+//		}
+//		
+//		if (runSlider) {
+//			Slider MoveSlider = new Slider(test.driver);
+//			MoveSlider.DragTheSlider();
+//		}
 		
-		if (runAccordion) {
-			Accordion ContainsAccordion = new Accordion(test.driver);
-			ContainsAccordion.ClickAccordion();
-			ContainsAccordion.VerifyContent1();  // Text is NOT displayed.
-			ContainsAccordion.VerifyContent2();
-		}
 		
-		if (runAutoComplete) {
-			 AutoComplete  ContainsAutoComplete = new AutoComplete(test.driver);
-			 ContainsAutoComplete.CheckAutoComplete();
-		}
-		
-		if (runDatepicker) {
-			Datepicker SelectDatapicker = new Datepicker(test.driver);
-			SelectDatapicker.SelectDateDisabledAndEnabled();
-		}
-		
-		if (runSlider) {
-			Slider MoveSlider = new Slider(test.driver);
-			MoveSlider.DragTheSlider();
-		}
-		
-		
-	}
+//	}
 
 }
