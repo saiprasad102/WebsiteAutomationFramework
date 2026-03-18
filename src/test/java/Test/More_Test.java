@@ -2,8 +2,7 @@ package Test;
 
 import BaseClass.Basic_BrowserSetup;
 import More.DynamicData;
-
-
+import More.FileDownload;
 
 import org.testng.annotations.Test;
 
@@ -11,8 +10,7 @@ import org.testng.annotations.Test;
 
 	public class More_Test extends Basic_BrowserSetup {
 
-	    @Test
-	    public void testGetAllDynamicUsers() {
+	  	    public void testGetAllDynamicUsers() {
 
 	        DynamicData dynamicPage = new DynamicData(driver);
 	       
@@ -26,6 +24,16 @@ import org.testng.annotations.Test;
 
 	       
 	    }
+	  	    
+	  	    
+	  	    
+	  	    public void TestFileDownload() {
+	  	    	FileDownload filedown = new FileDownload(driver);
+	  	    	
+	  	    	
+	  	    	filedown.TextFileDownload();
+	  	    	filedown.PdfFileDownload();
+			}
 	}
 	
 

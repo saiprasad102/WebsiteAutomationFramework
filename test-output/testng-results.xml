@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-14T14:23:30 IST" name="Default suite" finished-at="2026-03-14T14:24:20 IST" duration-ms="50061">
+  <suite started-at="2026-03-19T00:20:49 IST" name="Default suite" finished-at="2026-03-19T00:22:21 IST" duration-ms="92172">
     <groups>
     </groups>
-    <test started-at="2026-03-14T14:23:30 IST" name="Default test" finished-at="2026-03-14T14:24:20 IST" duration-ms="50061">
+    <test started-at="2026-03-19T00:20:49 IST" name="Default test" finished-at="2026-03-19T00:22:21 IST" duration-ms="92172">
       <class name="Test.More_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.More_Test@6aeb35e6]" started-at="2026-03-14T14:23:30 IST" name="setup" finished-at="2026-03-14T14:24:02 IST" duration-ms="32281" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.More_Test@1283bb96]" started-at="2026-03-19T00:20:49 IST" name="setup" finished-at="2026-03-19T00:21:20 IST" duration-ms="31354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetAllDynamicUsers()[pri:0, instance:Test.More_Test@6aeb35e6]" started-at="2026-03-14T14:24:02 IST" name="testGetAllDynamicUsers" finished-at="2026-03-14T14:24:20 IST" duration-ms="17758" status="PASS">
+        <test-method signature="TestFileDownload()[pri:0, instance:Test.More_Test@1283bb96]" started-at="2026-03-19T00:21:20 IST" name="TestFileDownload" finished-at="2026-03-19T00:22:21 IST" duration-ms="60797" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAllDynamicUsers -->
+        </test-method> <!-- TestFileDownload -->
       </class> <!-- Test.More_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -5,7 +5,7 @@
     <classes>
       <class name="Test.More_Test">
         <methods>
-          <include name="testGetAllDynamicUsers"/>
+          <include name="TestFileDownload"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Test.More_Test -->
